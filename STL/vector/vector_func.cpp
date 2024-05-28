@@ -48,6 +48,6 @@ int main(){
     //     cout<<*(it) <<" ";
     // }
 
-
+    cout<<"Size of Vector: " << v.size() << endl;
     return 0;
 }
