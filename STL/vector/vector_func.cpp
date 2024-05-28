@@ -38,6 +38,16 @@ int main(){
     // }
     // cout<<endl;
  
-    
+    // Insert Fucntions
+    // v.insert(v.begin(),2);
+    // v.insert(v.begin() + 1,2);
+    // v.insert(v.begin() + 1,2,5);
+
+    // for (auto it = v.begin() ; it != v.end() ; it++)
+    // {
+    //     cout<<*(it) <<" ";
+    // }
+
+
     return 0;
 }
