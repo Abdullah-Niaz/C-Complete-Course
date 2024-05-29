@@ -9,6 +9,7 @@ int main(){
     v.push(4);
 
     cout<<v.back() <<endl;
+    v.pop();
     cout<<v.front() <<endl;
     
       
