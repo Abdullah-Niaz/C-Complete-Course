@@ -48,6 +48,20 @@ int main(){
     //     cout<<*(it) <<" ";
     // }
 
-    cout<<"Size of Vector: " << v.size() << endl;
+    // cout<<"Size of Vector: " << v.size() << endl;
+
+    vector<int> v1 = {1,2,3,4,5};
+     for (auto it = v1.begin() ; it != v1.end() ; it++)
+    {
+        cout<<*(it) <<" ";
+    }
+    vector<int> v2 = {6,7,8,9,10};
+    for (auto it = v2.begin() ; it != v2.end() ; it++)
+    {
+        cout<<*(it) <<" ";
+    }
+
+
+    v1.swap(v2);
     return 0;
 }
