@@ -1,0 +1,63 @@
+vector is a container that is dynamic in nature 
+- It can grow or shrink in size as elements are added or removed
+- It is a contiguous container, meaning that elements are stored in contiguous memory locations
+- It is a random access container, meaning that elements can be accessed directly using their index
+- It is a sequence container, meaning that elements are stored in a specific order
+- It is a part of the C++ Standard Template Library (STL)
+
+
+push_back 
+- This function is used to add an element to the end of the vector
+- It takes one argument, which is the element to be added
+- It returns void
+v.push_back(1) {1}
+v.push_back(2) {1,2} 
+v.push_back(3) {1,2,3} 
+
+emplace_back
+- This function is used to add an element to the end of the vector
+- It takes one or more arguments, which are used to construct the element to be added
+- It returns void
+v.emplace_back(1) {1}
+v.emplace_back(2) {1} -> {1,2}
+v.emplace_back(3) {1,2} -> {1,2,3}
+
+
+vector can also be used as a pair
+
+vector<pair<first,second>> vector_name(5);
+vector_name.push_back({1,2}); // you have to put as a pair 
+vector_name.push_back({3,4});
+vector_name.push_back({5,6});
+vector_name.push_back({7,8});
+vector_name.push_back({9,10});
+First value of 0 index is 1
+Second value of 0 index is 2
+First value of 1 index is 3
+Second value of 1 index is 4
+First value of 2 index is 5
+Second value of 2 index is 6
+First value of 3 index is 7
+Second value of 3 index is 8
+First value of 4 index is 9
+Second value of 4 index is 10
+
+
+
+vector < int > v(5); // mean five instance of 0 like this {0,0,0,0,0}
+v.push_back(1); {1}
+v.push_back(2); {1,2}
+v.push_back(3); { 1,2,3};
+v.push_back(4); { 1,2,3,4};
+
+v.emplace_back(1); {1} 
+v.emplace_back(2); {1} -> {1,2}
+v.emplace_back(2); {1,2} -> {1,2,3}
+v.emplace_back(2); {1,2,3} -> {1,2,3,4}
+
+vector < int > v(5,100); // mean five instance of 100 like this {100,100,100,100,100}
+
+Copying Vector to Anther 
+
+vector < int > v(5);
+vector <int> c(v);
